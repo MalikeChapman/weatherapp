@@ -1,0 +1,188 @@
+html 
+{
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* #imgtitle
+{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: block;
+} */
+.header
+{
+    width: 100%;
+    min-height: 30px;
+    flex-basis: 10%;
+    background-color: rgb(58, 48, 37);
+    border: 3px solid black;
+}
+#title
+{
+    width: 100%;
+    text-align: center;
+    font-size: 3.3rem;
+    /* padding-bottom: 2rem; */
+}
+.search
+{
+    width: 100%;
+    min-height: 30px;
+    flex-basis: 15%;
+    background-color: rgb(105, 95, 116);
+    border: 3px solid black;
+    
+
+}
+.searchContainer
+{
+    width: 80%;
+    margin: 3rem auto;
+    text-align: center;
+}
+#submit
+{
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    padding-bottom: .5rem;
+    text-align: center;
+}
+#weatherCity
+{
+    width: 30%;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-size: 2rem;
+    background-color: rgb(218, 201, 177);
+}
+.cityresult
+{
+    width: 100%;   
+    min-height: 3rem;
+    flex-basis: 75%;
+    background-color: rgb(165, 121, 212);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px solid black;
+
+}
+.cityforecast
+{
+    width: 40%;
+    min-height: 3rem;
+    height: 90%;
+    /* background-color: rgb(110, 62, 161); */
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1rem 1.2rem rgb(0 0 0 / 50%);
+
+
+}
+
+.citydiv
+{
+    width: 40%;
+    height: 90%;
+    border: 2px solid black;
+    box-shadow: 1rem 1.2rem rgb(0 0 0 / 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dayforecast
+{
+    flex-basis: 12%;
+    border: 2px solid black;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.dayforecast span
+{
+    flex-basis: 33%;
+    font-size: 2rem;
+}
+.dayforecast i {
+    flex-basis: 33%;
+    font-size: 2rem;
+}
+.dayforecast h2
+{
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#cityTitle  
+{
+    border-bottom: 2px solid black;
+    width: 75%;
+    height: fit-content;
+    font-size: 4rem;
+    text-align: center;
+    margin: 1rem auto;
+    flex-basis: 10%;
+
+}
+.temperature
+{
+    width: 90%;
+    border: 2px solid black;
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: cornsilk;
+    box-shadow: 0rem 1.3rem rgba(68, 66, 66, 50%);
+}
+.weatherdata
+{
+    width: 100%;
+    border: 2px dotted black;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+div.temperature i
+{
+    font-size: 8rem;
+    color: cornsilk;
+}
+div.temperature span{
+    font-size: 8rem;
+}
+
+.weatheritems
+{
+    flex-basis: 15%;
+    width: 80%;
+    text-align: center;
+    font-size: 1.8rem;
+}
