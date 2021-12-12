@@ -159,6 +159,8 @@ body
     align-items: center;
     color: cornsilk;
     box-shadow: 0rem 1.3rem rgba(68, 66, 66, 50%);
+    background-color: #a94b4b;
+
 }
 .weatherdata
 {
@@ -170,13 +172,16 @@ body
     justify-content: space-around;
     align-items: center;
 }
-div.temperature i
+div.temperature img
 {
     font-size: 8rem;
+    margin-left: 2rem;
     color: cornsilk;
 }
 div.temperature span{
-    font-size: 8rem;
+    font-size: 4.5rem;
+    margin-left: 2rem;
+
 }
 
 .weatheritems

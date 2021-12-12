@@ -1,30 +1,30 @@
 /* eslint-disable */
+import { apikey } from "../apikey.js";
 export const apiSearch = (function ()
 {
     const elevalue = document.getElementById("weatherCity").value;
   
-    function valid()
+    async function valid()
     {
         console.log(this);
         const test = document.getElementById("weatherCity");
         if (test.value === '')
         {
             alert('This can not be blank!');
-            console.log("bad");
             return;
         } 
         else
         {
             test.setCustomValidity("");
-            console.log("good!")
-            alert("good to go!");
+            let url = `https://api.openweathermap.org/data/2.5/weather?q=${test.value}&appid=${apikey}&units=imperial`;
+             let response = await fetch(url);
+            let weatherData = await response.json();
+            console.log(weatherData);
+            return weatherData;
         }
     
     }
-    // if (elevalue === '')
-    // {
-    //     document.getElementById('weatherCity').setCustomValidity
-    // }
+   
     return {valid};
 
 })(document)
